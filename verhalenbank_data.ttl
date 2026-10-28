@@ -13694,9 +13694,6 @@ dcterms:language a owl:ObjectProperty ;
 :Personal_narrative a :Subgenre,
         owl:NamedIndividual .
 
-:Place_of_Action a owl:Class ;
-    rdfs:subClassOf schema:Place .
-
 :RAAD0014 a :Story ;
     dcterms:identifier "RAAD0014" ;
     dcterms:language :LinguisticSystem_Standaardnederlands ;

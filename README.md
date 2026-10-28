@@ -16,7 +16,7 @@ The project maps the Verhalenbank (Dutch folktale database) JSON export to an OW
 | `requirements.txt` | Python dependencies |
 
 ## Data
-Since the Verhalenbank JSONs arew too large (77 MB each), we kept them out of this repository. Put them in the same folder before running the script.
+Since the Verhalenbank JSONs are too large (77 MB each), we kept them out of this repository. Put them in the same folder before running the script.
 
 ## Run the script
 
