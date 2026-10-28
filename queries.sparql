@@ -42,3 +42,31 @@ SELECT (COUNT(DISTINCT ?s) AS ?n) WHERE {
   ?m rdfs:label "Duitsland" .
   ?p schema:containedInPlace* ?c .
   ?c a schema:Country ; rdfs:label "Nederland" }
+
+# 6. Which Tales of Magic were recorded in Friesland between 1960 and 1980?
+SELECT DISTINCT ?id ?start ?end ?placeLabel WHERE {
+  ?story :hasTaleType :Tales_of_Magic ;
+         dcterms:identifier ?id ;
+         :startDate ?start ;
+         :endDate ?end ;
+         :recordedIn ?place .
+  ?place rdfs:label ?placeLabel ;
+         schema:containedInPlace* ?province .
+  ?province a :Province_or_Region ;
+            rdfs:label "Friesland" .
+  FILTER (?start >= "1960-01-01T00:00:00"^^xsd:dateTime &&
+          ?end   <  "1981-01-01T00:00:00"^^xsd:dateTime)
+}
+ORDER BY ?start
+
+# 7. Which narrators told stories from more than one ATU range?
+SELECT ?narrator (COUNT(DISTINCT ?range) AS ?numRanges)
+       (GROUP_CONCAT(DISTINCT STRAFTER(STR(?range), "#"); separator=", ") AS ?ranges)
+WHERE {
+  ?story dcterms:creator ?creator ;
+         :hasTaleType ?range .
+  ?creator rdfs:label ?narrator .
+}
+GROUP BY ?creator ?narrator
+HAVING (COUNT(DISTINCT ?range) > 1)
+ORDER BY DESC(?numRanges)
