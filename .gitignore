@@ -1,0 +1,5 @@
+20231201_verhalenbank_*.json
+.vscode/
+.DS_Store
+.venv/
+__pycache__/

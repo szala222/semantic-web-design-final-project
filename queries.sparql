@@ -1,0 +1,44 @@
+# Competency queries for the Verhalenbank knowledge graph.
+# Run them in the Fuseki query editor (http://localhost:3030/#/dataset/verhalenbank/query).
+# Paste the PREFIX block above each query.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+
+# 0. Sanity check: number of triples in the dataset
+SELECT (COUNT(*) AS ?n) WHERE { ?s ?p ?o }
+
+# 1. How many tales of magic were recorded in Friesland?
+SELECT (COUNT(DISTINCT ?s) AS ?n) WHERE {
+  ?s :hasTaleType :Tales_of_Magic ; :recordedIn ?p .
+  ?p schema:containedInPlace* ?f .
+  ?f a :Province_or_Region ; rdfs:label "Friesland" }
+
+# 2. Which stories with an ogre motif were recorded in Limburg before 1950?
+SELECT ?id WHERE {
+  ?s :hasMotif :Ogres ; :recordedIn ?p ; :startDate ?d ; dcterms:identifier ?id .
+  ?p schema:containedInPlace* ?f . ?f rdfs:label "Limburg" .
+  FILTER(?d < "1950-01-01T00:00:00"^^xsd:dateTime) }
+ORDER BY ?id
+
+# 3. How many stories were recorded per province?
+SELECT ?prov (COUNT(DISTINCT ?s) AS ?n) WHERE {
+  ?s :recordedIn ?p . ?p schema:containedInPlace* ?f .
+  ?f a :Province_or_Region ; rdfs:label ?prov }
+GROUP BY ?prov ORDER BY DESC(?n)
+
+# 4. How many stories were recorded per decade?
+SELECT ?decade (COUNT(?s) AS ?n) WHERE {
+  ?s :startDate ?d . BIND(FLOOR(YEAR(?d) / 10) * 10 AS ?decade) }
+GROUP BY ?decade ORDER BY ?decade
+
+# 5. How many stories recorded in the Netherlands mention Germany?
+SELECT (COUNT(DISTINCT ?s) AS ?n) WHERE {
+  ?s :mentionsPlace ?m ; :recordedIn ?p .
+  ?m rdfs:label "Duitsland" .
+  ?p schema:containedInPlace* ?c .
+  ?c a schema:Country ; rdfs:label "Nederland" }

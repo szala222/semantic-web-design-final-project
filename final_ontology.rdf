@@ -1,0 +1,675 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente/"
+     xml:base="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:SWT_Nolan_and_Levente="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Creator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/language">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasCollector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasCollector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Collector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasMotif -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasMotif">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasNamedEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasNamedEntity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Named_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasSourceType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasSourceType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Source_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasSubgenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasSubgenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasTaleType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#hasTaleType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#mentionsPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#mentionsPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#recordedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#recordedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#takesPlaceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#takesPlaceIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- https://schema.org/containedInPlace -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/containedInPlace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#endDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#startDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#wordCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#wordCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/LinguisticSystem -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LinguisticSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Collector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Collector">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Creator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Municipality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Municipality">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Named_Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Named_Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Named_Entity_Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Named_Entity_Location">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Province_or_Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Province_or_Region">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Source_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Source_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Story"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    
+
+
+    <!-- https://schema.org/City -->
+
+    <owl:Class rdf:about="https://schema.org/City">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Country -->
+
+    <owl:Class rdf:about="https://schema.org/Country">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Place -->
+
+    <owl:Class rdf:about="https://schema.org/Place"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Anecdotes_and_Jokes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Anecdotes_and_Jokes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Animal_Tales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Animal_Tales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Animals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Animals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Broodjeaapverhaal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Broodjeaapverhaal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Captives_and_Fugitives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Captives_and_Fugitives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Chance_and_Fate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Chance_and_Fate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Deceptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Deceptions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Exempel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Exempel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Formula_Tales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Formula_Tales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Humor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Humor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Kwispel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Kwispel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Legende -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Legende">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Lied -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Lied">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Limerick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Limerick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Magic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Magic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Marvels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Marvels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Miscellaneous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Miscellaneous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Mop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Mop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Mythe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Mythe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Mythological_Motifs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Mythological_Motifs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Ogres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Ogres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Ordaining_the_Future -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Ordaining_the_Future">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Personal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Personal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Personal_narrative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Personal_narrative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Raadsel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Raadsel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Realistic_Tales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Realistic_Tales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Religion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Religion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Religious_Tales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Religious_Tales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Reversal_of_Fortune -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Reversal_of_Fortune">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Rewards_and_Punishment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Rewards_and_Punishment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Sage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Sage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Sex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Sex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Society -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Society">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Sprookje -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Sprookje">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Taboo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Taboo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tales_of_Magic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tales_of_Magic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tales_of_the_Stupid_Ogre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tales_of_the_Stupid_Ogre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tale_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tests -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Tests">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#The_Dead -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#The_Dead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#The_Nature_of_Life -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#The_Nature_of_Life">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#The_Wise_and_the_Foolish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#The_Wise_and_the_Foolish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Traits_of_Character -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Traits_of_Character">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Unnatural_Cruelty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Unnatural_Cruelty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Motif"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Weet_Niet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Weet_Niet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolanheinrich/ontologies/2026/9/SWT_Nolan_and_Levente#Subgenre"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
